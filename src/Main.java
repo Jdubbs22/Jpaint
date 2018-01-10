@@ -4,7 +4,7 @@ public class Main {
 	
 	public static void main (String[]args){
 		
-		System.out.println("hello world");  //testing the git interface
+		System.out.println("hello GitKraken");  //testing the git interface
 		
 	}//end main
 	
