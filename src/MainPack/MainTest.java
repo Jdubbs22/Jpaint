@@ -7,6 +7,9 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 
+import MyGui.PrimarycolorPopUp;
+import MyGui.SecondaryColorPopUp;
+import MyGui.ShadingTypePopUp;
 import MyGui.ShapeChoicePopUp;
 import MyGui.dialoguePopUpLIstener;
 import view.EventName;
@@ -24,17 +27,20 @@ public class MainTest {
 		Gui myGuiWindow = new Gui(testGuiWind);
 		JButton ShapeButton = testGuiWind.getButton(EventName.CHOOSE_SHAPE);  //JButton is java code that takes the enum eventname
 																			//and adds the shapes button
-		ShapeButton.addActionListener(new dialoguePopUpLIstener(myGuiWindow, new ShapeChoicePopUp()) { //also java, anonomous class that waits for the function to be called
-															
-			
-			});//end ShapeButton.addActionListener(new ActionListener()
+		
+		JButton PrimaryColorButton = testGuiWind.getButton(EventName.CHOOSE_PRIMARY_COLOR); 
+		JButton SecondaryColorButton = testGuiWind.getButton(EventName.CHOOSE_SECONDARY_COLOR);
+		JButton ShadingTypeButton = testGuiWind.getButton(EventName.CHOOSE_SHADING_TYPE);
+		JButton Start_End_Button = testGuiWind.getButton(EventName.CHOOSE_START_POINT_ENDPOINT_MODE);
 		
 		
+		ShapeButton.addActionListener(new dialoguePopUpLIstener(myGuiWindow, new ShapeChoicePopUp()));  //also java, anonomous class that waits for the function to be called
+		//end ShapeButton.addActionListener(new ActionListener()
 		
-		
-		
-	
-		
+		PrimaryColorButton.addActionListener(new dialoguePopUpLIstener(myGuiWindow, new PrimarycolorPopUp()));
+		SecondaryColorButton.addActionListener(new dialoguePopUpLIstener(myGuiWindow, new SecondaryColorPopUp()));
+		ShadingTypeButton.addActionListener(new dialoguePopUpLIstener(myGuiWindow, new ShadingTypePopUp()));
+		Start_End_Button.addActionListener(new dialoguePopUpLIstener(myGuiWindow, new ShadingTypePopUp()));
 		
 	}//end main
 
