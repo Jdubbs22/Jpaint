@@ -6,14 +6,14 @@ import java.awt.event.ActionListener;
 import view.gui.Gui;
 import view.interfaces.IDialogChoice;
 
-public class dialoguePopUpLIstener implements ActionListener{
+public class dialoguePopUpLIstener implements ActionListener{ //Event listeners represent the interfaces responsible to handle events.
 		public dialoguePopUpLIstener(Gui aGui, IDialogChoice dialogChoice) {
 		super();
 		this.aGui = aGui;
 		this.dialogChoice = dialogChoice;
 	}
-		Gui aGui;
-		IDialogChoice dialogChoice;
+		Gui aGui;  //ala myGuiWindow created in main
+		IDialogChoice dialogChoice; //ala ShapeChoicePopUp class
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
