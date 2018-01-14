@@ -12,6 +12,7 @@ import MyGui.SecondaryColorPopUp;
 import MyGui.ShadingTypePopUp;
 import MyGui.ShapeChoicePopUp;
 import MyGui.StartPoint_EndPoint_PopUp;
+import MyGui.TestOfListener;
 import MyGui.dialoguePopUpLIstener;
 import view.EventName;
 import view.gui.Gui;
@@ -34,7 +35,7 @@ public class MainTest {
 		JButton ShadingTypeButton = testGuiWind.getButton(EventName.CHOOSE_SHADING_TYPE);
 		JButton Start_End_Button = testGuiWind.getButton(EventName.CHOOSE_START_POINT_ENDPOINT_MODE);
 		
-		
+		ShapeButton.addActionListener(new TestOfListener());//this is a test of how to use a listener..makes a sideways triangle
 		ShapeButton.addActionListener(new dialoguePopUpLIstener(myGuiWindow, new ShapeChoicePopUp()));  //also java, anonymous class that waits for the function to be called
 		PrimaryColorButton.addActionListener(new dialoguePopUpLIstener(myGuiWindow, new PrimarycolorPopUp()));
 		SecondaryColorButton.addActionListener(new dialoguePopUpLIstener(myGuiWindow, new SecondaryColorPopUp()));
