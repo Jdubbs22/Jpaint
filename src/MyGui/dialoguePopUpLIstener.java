@@ -20,6 +20,7 @@ public class dialoguePopUpLIstener implements ActionListener{
 		System.out.println("test of action event");
 		
 		aGui.getDialogResponse(dialogChoice); //brings up dialog text box
+		
 	}
 
 	

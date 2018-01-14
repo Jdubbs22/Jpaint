@@ -13,20 +13,20 @@ public class StartPoint_EndPoint_PopUp implements IDialogChoice{
 	@Override
 	public Object[] getDialogOptions() {
 		// TODO Auto-generated method stub
-		String array4[] = {"dialog ","options2"};;
+		String array4[] = {"Draw","Select","Move"};;
 		return array4;
 	}
 
 	@Override
 	public String getDialogText() {
 		// TODO Auto-generated method stub
-		return "test2";
+		return "Available Choices";
 	}
 
 	@Override
 	public String getDialogTitle() {
 		// TODO Auto-generated method stub
-		return "test3";
+		return "Start-End Point";
 	}
 
 }//end class

@@ -15,7 +15,7 @@ public class ShapeChoicePopUp implements IDialogChoice{  //need to make one of t
 	public Object[] getDialogOptions() {
 		// TODO Auto-generated method stub
 		System.out.println("test of getDialogOptions()");
-		String array[] = {"dialog ","options2"};
+		String array[] = {"Triangle ","Rectangle","Elipse"};
 		return array;
 	}
 
@@ -24,7 +24,7 @@ public class ShapeChoicePopUp implements IDialogChoice{  //need to make one of t
 		// TODO Auto-generated method stub
 		System.out.println("test of getDialogText()");
 		//return new Rectangle(), new Triangle(), new Elipse();
-		return "options";
+		return "Available Choices";
 	}
 
 	@Override

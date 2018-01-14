@@ -14,20 +14,20 @@ public class PrimarycolorPopUp implements IDialogChoice {
 	@Override
 	public Object[] getDialogOptions() {
 		// TODO Auto-generated method stub
-		String array1[] = {"dialog ","options2"};;
+		String array1[] = {"Black","Blue"};;
 		return array1;
 	}
 
 	@Override
 	public String getDialogText() {
 		// TODO Auto-generated method stub
-		return "text3";
+		return "Available Choices";
 	}
 
 	@Override
 	public String getDialogTitle() {
 		// TODO Auto-generated method stub
-		return "text4";
+		return "Primary Color";
 	}
 
 }//end class

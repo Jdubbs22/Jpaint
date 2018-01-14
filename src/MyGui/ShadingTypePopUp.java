@@ -13,20 +13,20 @@ public class ShadingTypePopUp implements IDialogChoice{
 	@Override
 	public Object[] getDialogOptions() {
 		// TODO Auto-generated method stub
-		String array3[] = {"dialog ","options2"};;
+		String array3[] = {"Outline","Filled-In","Outline & Filled"};;
 		return array3;
 	}
 
 	@Override
 	public String getDialogText() {
 		// TODO Auto-generated method stub
-		return "test2";
+		return "Available Choices";
 	}
 
 	@Override
 	public String getDialogTitle() {
 		// TODO Auto-generated method stub
-		return "test3";
+		return "Shading Type";
 	}
 
 }//end class
