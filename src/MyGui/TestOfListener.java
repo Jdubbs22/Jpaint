@@ -3,7 +3,8 @@ package MyGui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class TestOfListener implements ActionListener{
+public class TestOfListener implements ActionListener{//created only to play with listeners...makes a triangle on it's side
+	
 
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
